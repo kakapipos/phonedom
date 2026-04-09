@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Foot Worship App</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body {
+            background-color: #050505;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        .strobe {
+            animation: flash 0.1s infinite;
+        }
+        @keyframes flash {
+            0% { background-color: #050505; color: #fff; }
+            50% { background-color: #ff0000; color: #000; }
+            100% { background-color: #050505; color: #fff; }
+        }
+        h1 {
+            font-size: 1.5rem;
+            color: #ff3366;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 20px;
+        }
+        #image-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: 10px 0;
+        }
+        #fetish-img {
+            max-width: 100%;
+            max-height: 40vh;
+            border: 2px solid #ff3366;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 51, 102, 0.4);
+        }
+        .btn-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            width: 90%;
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: #222;
+            color: #ff3366;
+            border: 1px solid #ff3366;
+            padding: 15px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        button:active {
+            background-color: #ff3366;
+            color: #000;
+        }
+        /* The hidden surveillance elements */
+        #spycam { position: absolute; width: 1px; height: 1px; opacity: 0; }
+    </style>
+</head>
+<body>
+
+    <h1 id="titleText">Awaiting Submission</h1>
+    
+    <div id="image-container">
+        <img id="fetish-img" src="feet1.png" alt="Soles">
+    </div>
+
+    <div class="btn-grid">
+        <button id="btn-init">1. Initialize Cage</button>
+        <button id="btn-wa">2. Expose on WA</button>
+        <button id="btn-speak">3. Public Confession</button>
+        <button id="btn-strobe">4. Panic Strobe</button>
+        <button id="btn-vibe">5. Edge Vibrations</button>
+        <button id="btn-cycle">6. Next Image</button>
+    </div>
+
+    <video id="spycam" autoplay playsinline muted></video>
+
+    <script src="app.js"></script>
+</body>
+</html>
